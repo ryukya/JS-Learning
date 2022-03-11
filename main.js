@@ -57,3 +57,5 @@ arrProduct.forEach((prod) => {
 })
 parent += '</ul>';
 prodcutList_items.innerHTML = parent;
+//========================================
+// Map class and inheritance
