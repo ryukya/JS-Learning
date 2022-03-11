@@ -25,3 +25,35 @@ console.log("now this is let y", "which was causing error since it use let")
     const Name = data=> this will not be changed even if there is an update in the next line
 
     */
+    //===========================================================
+console.log('Congcat in ES6');
+const user_place = document.getElementById('user');
+
+const user_logged = "Gracia";
+user_place.innerHTML = `Hi ${user_logged}, how are you today?`;
+//=============================================
+const cart_items = document.getElementById('cart');
+
+function addProduct(name, category) {
+    return {
+        name,
+        category
+    }
+}
+
+var getProduct = addProduct("Rolex", "Watch");
+cart_items.innerHTML = `Your product : ${getProduct.name} from ${getProduct.category} category `;
+//================================================
+const prodcutList_items = document.getElementById('productList');
+
+const arrProduct = ['Indomie', 'Cake', 'Egg'];
+arrProduct.push('Cheese');
+let parent = '<ul>';
+
+arrProduct.forEach((prod) => {
+    parent += '<li>' + prod + '</li>';
+    console.log(`${prod}`);
+
+})
+parent += '</ul>';
+prodcutList_items.innerHTML = parent;
